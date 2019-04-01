@@ -1,0 +1,32 @@
+{
+  "name": "codingchallenge",
+  "version": "1.0.0",
+  "description": "Coding challenge use APIs, chartJS, use of database and working with HTML/CSS/Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nisargpatel28/codingChallenge.git"
+  },
+  "keywords": [
+    "nodejs",
+    "bitcoin",
+    "API",
+    "chartJS",
+    "MySQL"
+  ],
+  "author": "Nisarg Patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nisargpatel28/codingChallenge/issues"
+  },
+  "homepage": "https://github.com/nisargpatel28/codingChallenge#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "request": "^2.88.0"
+  }
+}
