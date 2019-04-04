@@ -58,8 +58,8 @@
 						<div class="contact-text">
 							<span>My Balance</span>
 							<h3>Get Balance</h3><br>
-							<form class="contact-form" method="POST" action="/">
-								<input type="text" name="testnetAddress" placeholder="Enter Bitcoin Testnet Address" value="<%= testnetAddressField %>" class="marginTwoPx" >
+							<form class="contact-form" method="POST" action="/checkbalance">
+								<input type="text" name="testnetAddress" placeholder="Enter Bitcoin Testnet Address" value="<%= testnetAddressField %>" class="marginTwoPx" autofocus >
 								<label class="marginFortyPx">Hint : <b>1DEP8i3QJCsomS4BSMY2RpU1upv62aGvhD</b></label><br>
 								<button class="site-btn">Fetch Balance</button>
 							</form>

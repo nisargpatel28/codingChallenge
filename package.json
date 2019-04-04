@@ -24,6 +24,8 @@
   },
   "homepage": "https://github.com/nisargpatel28/codingChallenge#readme",
   "dependencies": {
+    "chart.js": "^2.8.0",
+    "chartjs-node": "^1.7.1",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "mysql": "^2.16.0",
