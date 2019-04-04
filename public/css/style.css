@@ -1334,11 +1334,12 @@ ol {
 		padding-left: 30px;
 	}
 	.header-section {
-		left: -150%;
+		/*left: -150%;
 		opacity: 0;
-		visibility: hidden;
+		visibility: hidden;*/
 		width: 100%;
 		overflow-y: auto;
+		position: relative;
 	}
 	.header-section.active {
 		left: 0;
@@ -1346,7 +1347,7 @@ ol {
 		visibility: visible;
 	}
 	.header-section.active .header-close {
-		position: fixed;
+		/*position: fixed;*/
 	}
 	.header-close {
 		display: block;
@@ -1429,11 +1430,12 @@ ol {
 		display: block;
 	}
 	.header-section {
-		left: -150%;
+		/*left: -150%;
 		opacity: 0;
-		visibility: hidden;
+		visibility: hidden;*/
 		width: 100%;
 		overflow-y: auto;
+		position: relative;
 	}
 	.header-section.active {
 		left: 0;
@@ -1441,7 +1443,7 @@ ol {
 		visibility: visible;
 	}
 	.header-section.active .header-close {
-		position: fixed;
+		/*position: fixed;*/
 	}
 	.header-warp {
 		margin-bottom: 50px;
