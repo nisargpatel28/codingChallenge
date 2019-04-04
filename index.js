@@ -1,3 +1,7 @@
+/*  Author 		: Nisarg Patel
+ *  Date   		: 2nd April 2019
+ *  Description : Coding challenge Ref https://github.com/MarkdaleMGMT/transaction-methods/wiki/Coding-Challenge
+*/
 const express     = require('express');
 const path        = require('path');
 const app         = express();
@@ -98,29 +102,11 @@ app.get('/', function(req, res) {
 	    })
 	});	
 });
-
-app.post('/', urlencodedParser, function(req, res) {
-	var balanceAc = 0;
-	new Promise(function(resolve, reject) {
-	    api_helper.make_API_call('https://api.blockcypher.com/v1/btc/main/addrs/'+req.body.testnetAddress+'/balance')
-	    .then(response => {
-	    	var balanceAc = response.balance;
-	    	if( typeof balanceAc === 'undefined')
-	    	{
-	    		balanceAc = 'N/A';
-	    	}
-	    	res.render('index.ejs', {title: 'Coding Challenge', testnetAddressField: req.body.testnetAddress, testnetAddress: req.body.testnetAddress, balanceAc: balanceAc});
-	    })
-	    .catch(error => {
-	    	console.log("Error=>", error);
-	    })
-	});	
-});
-
+// Check balance page using get request to render view file
 app.get('/checkbalance', function(req, res) {
 	res.render('checkBalance.ejs', {title: 'Coding Challenge', testnetAddressField: '', testnetAddress: 'N/A', balanceAc: 'N/A' });
 });
-
+// Check balance page using post request to render view file and data
 app.post('/checkbalance', urlencodedParser, function(req, res) {
 	var balanceAc = 0;
 	new Promise(function(resolve, reject) {
@@ -139,6 +125,7 @@ app.post('/checkbalance', urlencodedParser, function(req, res) {
 	});	
 });
 
+// Payment page using get request to render view file
 app.get('/payment', urlencodedParser, function(req, res) {
 	new Promise(function(resolve, reject) {
 	    db_helper.getTransactions().then(response => {
@@ -151,6 +138,7 @@ app.get('/payment', urlencodedParser, function(req, res) {
 	});	
 });
 
+// Payment page using post request to render file
 app.post('/payment', urlencodedParser, function(req, res) {
 	new Promise(function(resolve, reject) {
 	    db_helper.addTransaction(req).then(response => {
