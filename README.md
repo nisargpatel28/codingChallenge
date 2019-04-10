@@ -1,8 +1,9 @@
 # codingChallenge
 Coding challenge use APIs, chartJS, use of database and working with HTML/CSS/Javascript
 
-Setup/ Installation guide
+## Setup/ Installation guide
 
+```
 1). git clone https://github.com/nisargpatel28/codingChallenge.git
 2). Go to directory 
     a. cd codingChallenge
@@ -17,3 +18,4 @@ Setup/ Installation guide
 	    database: "cc"
 5). From terminal run : node index.js
 6). Go to Web browser : http://localhost:3000
+```
